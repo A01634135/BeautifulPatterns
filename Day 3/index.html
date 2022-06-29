@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My incredible first webpage!</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col text-center">
+                <h1>Hello! My name is Diego!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <img id="my-photo" src="./assets/yo.jpeg" alt="A photo of myself">
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-12 col-md-6 offset-md-3">
+                <p>I am a software engineer form Guadalajara, Mexico 🇲🇽, I like to practice CrossFit and eat tacos.</p>
+                <div class="text-center">
+                    <a href="https://instagram.com/deficts" class="mr-2" style="text-decoration: none;">
+                        <img class="social-icon" src="./assets/social/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://twitter.com/deficts" class="mr-2" style="text-decoration: none;">
+                        <img class="social-icon" src="./assets/social/twitter.png" alt="twitter">
+                    </a>
+                    <a href="https://github.com/deficts" style="text-decoration: none;">
+                        <img class="social-icon" src="./assets/social/github.png" alt="github">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6 col-sm-12">
+                <div class="letter text-center">
+                    <h4> Listen to my current favorite song:</h4>
+                    <iframe style="margin: 0 auto;" src="https://open.spotify.com/embed/track/1yoMvmasuxZfqHEipJhRbp"
+                        width="300" height="80" frameborder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="letter text-center">
+                    <h4> Listen to my all time favorite song:</h4>
+                    <iframe src="https://open.spotify.com/embed/track/0f5B2p63SHBNHxuBzIr9qQ" width="300" height="80"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="offset-md-5 col-md-2  col-sm-12 text-center">
+                <h4>The time is:</h4>
+                <p id="clock" clas="text-center"></p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="offset-md-3"></div>
+            <div class="col-md-6 letter">
+                <h3 class="text-center">Quiz about myself</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="age">How old am I?</label>
+                        <select class="form-control" id="age">
+                            <option>No idea</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="food">Which is my favorite food?</label>
+                        <select class="form-control" id="food">
+                            <option>No idea</option>
+                            <option>Tacos</option>
+                            <option>Pizza</option>
+                            <option>Pozole</option>
+                            <option>Hamburger</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="language">Which is my favorite programming language?</label>
+                        <select class="form-control" id="language">
+                            <option>No idea</option>
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>TypeScript</option>
+                            <option>JavaScript</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-primary mb-2 float-right" onclick="checkQuiz()">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
